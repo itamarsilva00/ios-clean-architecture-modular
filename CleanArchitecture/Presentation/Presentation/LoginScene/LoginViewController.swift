@@ -30,6 +30,7 @@ public class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.setNavigationBarHidden(true, animated: false)
+        hideKeyboardWhenTapView()
     }
 
     public override func loadView() {

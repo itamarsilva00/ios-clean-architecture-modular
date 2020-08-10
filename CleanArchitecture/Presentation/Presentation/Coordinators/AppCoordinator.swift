@@ -33,7 +33,8 @@ public class AppCoordinator: Coordinator {
 
 extension AppCoordinator: AuthenticationCoordinatorDelegate {
 
-    public func didAuthenticate() {
-        debugPrint(#function)
+    public func didAuthenticate(_ coordinator: AuthenticationCoordinator) {
+        #warning("TODO - Presente home")
+        coordinatorDidExit(coordinator)
     }
 }

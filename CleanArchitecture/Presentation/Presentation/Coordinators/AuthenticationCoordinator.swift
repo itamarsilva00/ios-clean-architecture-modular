@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol AuthenticationCoordinatorDelegate: CoordinatorDelegate {
-    func didAuthenticate()
+    func didAuthenticate(_ coordinator: AuthenticationCoordinator)
 }
 
 public class AuthenticationCoordinator: Coordinator {
@@ -28,8 +28,7 @@ public class AuthenticationCoordinator: Coordinator {
     }
 
     public func start() {
-        let presenter = LoginPresenter(coordinator: self)
-        let loginViewController = LoginViewController(presenter: presenter)
+        let loginViewController = authenticationFactory.makeLoginViewController()
         navigationController.pushViewController(loginViewController, animated: true)
     }
 
@@ -38,7 +37,7 @@ public class AuthenticationCoordinator: Coordinator {
 extension AuthenticationCoordinator: LoginSceneCoordinating {
 
     public func showHome() {
-        coordinatorDelegate?.didAuthenticate()
+        coordinatorDelegate?.didAuthenticate(self)
     }
 }
 
