@@ -1,0 +1,30 @@
+platform :ios, '13.0'
+inhibit_all_warnings!
+use_frameworks!
+workspace 'CleanArchitecture'
+
+def diPods
+  pod 'Swinject', '~> 2.7.1'
+  pod 'SwinjectAutoregistration', '~> 2.7.0'
+end
+
+target 'CleanArchitecture' do
+  project 'CleanArchitecture'
+
+  diPods
+
+  target 'CleanArchitectureTests' do
+    inherit! :search_paths
+  end
+  target 'CleanArchitectureUITests' do
+    inherit! :search_paths
+  end
+end
+
+target 'DependencyInjection' do
+  project 'DependencyInjection/DependencyInjection'
+  
+  diPods
+
+  target 'DependencyInjectionTests'
+end
