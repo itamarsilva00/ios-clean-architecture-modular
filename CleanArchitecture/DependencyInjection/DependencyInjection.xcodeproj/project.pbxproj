@@ -3,11 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		01342D0A9870BF45B1166EF8 /* Pods_DependencyInjection_DependencyInjectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4694B6D811EBD1976D9DD2AC /* Pods_DependencyInjection_DependencyInjectionTests.framework */; };
+		235E636924E0D54800AE7ECC /* CoordinatorFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E636824E0D54800AE7ECC /* CoordinatorFactoryAssembly.swift */; };
+		235E636C24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E636B24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift */; };
+		235E636F24E0D5E000AE7ECC /* ResolverExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E636E24E0D5E000AE7ECC /* ResolverExtension.swift */; };
+		235E637224E0D74600AE7ECC /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637124E0D74600AE7ECC /* CoordinatorAssembly.swift */; };
+		235E637524E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637424E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift */; };
+		235E637724E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637624E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift */; };
+		235E637924E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637824E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift */; };
+		23B302FD24E0CB0300483553 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302FC24E0CB0300483553 /* Infra.framework */; };
+		23B302FE24E0CB0300483553 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302FC24E0CB0300483553 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3030124E0CB0E00483553 /* Local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030024E0CB0E00483553 /* Local.framework */; };
+		23B3030224E0CB0E00483553 /* Local.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030024E0CB0E00483553 /* Local.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3030424E0CB1900483553 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030324E0CB1900483553 /* Domain.framework */; };
+		23B3030524E0CB1900483553 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030324E0CB1900483553 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3030724E0CB2100483553 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030624E0CB2100483553 /* Data.framework */; };
+		23B3030824E0CB2100483553 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030624E0CB2100483553 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3030A24E0CB2800483553 /* Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030924E0CB2800483553 /* Remote.framework */; };
+		23B3030B24E0CB2800483553 /* Remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030924E0CB2800483553 /* Remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3030D24E0CB2D00483553 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030C24E0CB2D00483553 /* Presentation.framework */; };
+		23B3030E24E0CB2D00483553 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030C24E0CB2D00483553 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3032624E0CF3100483553 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3032524E0CF3100483553 /* DependencyInjector.swift */; };
 		23D4D2B624E06B8A00672F22 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D4D2AC24E06B8A00672F22 /* DependencyInjection.framework */; };
 		23D4D2BB24E06B8A00672F22 /* DependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D2BA24E06B8A00672F22 /* DependencyInjectionTests.swift */; };
 		23D4D2BD24E06B8A00672F22 /* DependencyInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D4D2AF24E06B8A00672F22 /* DependencyInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,8 +44,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23B302FF24E0CB0300483553 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23B3030824E0CB2100483553 /* Data.framework in Embed Frameworks */,
+				23B3030524E0CB1900483553 /* Domain.framework in Embed Frameworks */,
+				23B3030E24E0CB2D00483553 /* Presentation.framework in Embed Frameworks */,
+				23B3030224E0CB0E00483553 /* Local.framework in Embed Frameworks */,
+				23B302FE24E0CB0300483553 /* Infra.framework in Embed Frameworks */,
+				23B3030B24E0CB2800483553 /* Remote.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		041E507E1AD68FE2D19F2331 /* Pods_DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235E636824E0D54800AE7ECC /* CoordinatorFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryAssembly.swift; sourceTree = "<group>"; };
+		235E636B24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
+		235E636E24E0D5E000AE7ECC /* ResolverExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtension.swift; sourceTree = "<group>"; };
+		235E637124E0D74600AE7ECC /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
+		235E637424E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFactoryImplementation.swift; sourceTree = "<group>"; };
+		235E637624E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowAssembly.swift; sourceTree = "<group>"; };
+		235E637824E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactoryAssembly.swift; sourceTree = "<group>"; };
+		23B302FC24E0CB0300483553 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3030024E0CB0E00483553 /* Local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3030324E0CB1900483553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3030624E0CB2100483553 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3030924E0CB2800483553 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3030C24E0CB2D00483553 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3032524E0CF3100483553 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
 		23D4D2AC24E06B8A00672F22 /* DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D4D2AF24E06B8A00672F22 /* DependencyInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DependencyInjection.h; sourceTree = "<group>"; };
 		23D4D2B024E06B8A00672F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B3030424E0CB1900483553 /* Domain.framework in Frameworks */,
 				4D19592C21616F70693888DB /* Pods_DependencyInjection.framework in Frameworks */,
+				23B302FD24E0CB0300483553 /* Infra.framework in Frameworks */,
+				23B3030724E0CB2100483553 /* Data.framework in Frameworks */,
+				23B3030A24E0CB2800483553 /* Remote.framework in Frameworks */,
+				23B3030D24E0CB2D00483553 /* Presentation.framework in Frameworks */,
+				23B3030124E0CB0E00483553 /* Local.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +119,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235E636A24E0D56100AE7ECC /* CoordinatorAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				235E637124E0D74600AE7ECC /* CoordinatorAssembly.swift */,
+				235E636824E0D54800AE7ECC /* CoordinatorFactoryAssembly.swift */,
+				235E636B24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift */,
+			);
+			path = CoordinatorAssembly;
+			sourceTree = "<group>";
+		};
+		235E636D24E0D5CE00AE7ECC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				235E636E24E0D5E000AE7ECC /* ResolverExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		235E637024E0D69400AE7ECC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				235E637824E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift */,
+				235E637324E0D85700AE7ECC /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		235E637324E0D85700AE7ECC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				235E637424E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift */,
+				235E637624E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		23D4D2A224E06B8A00672F22 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +178,10 @@
 		23D4D2AE24E06B8A00672F22 /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				23B3032524E0CF3100483553 /* DependencyInjector.swift */,
+				235E637024E0D69400AE7ECC /* Features */,
+				235E636A24E0D56100AE7ECC /* CoordinatorAssembly */,
+				235E636D24E0D5CE00AE7ECC /* Extensions */,
 				23D4D2AF24E06B8A00672F22 /* DependencyInjection.h */,
 				23D4D2B024E06B8A00672F22 /* Info.plist */,
 			);
@@ -113,6 +212,12 @@
 		D3723AF3D5E3F051098AE587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23B3030C24E0CB2D00483553 /* Presentation.framework */,
+				23B3030924E0CB2800483553 /* Remote.framework */,
+				23B3030624E0CB2100483553 /* Data.framework */,
+				23B3030324E0CB1900483553 /* Domain.framework */,
+				23B3030024E0CB0E00483553 /* Local.framework */,
+				23B302FC24E0CB0300483553 /* Infra.framework */,
 				041E507E1AD68FE2D19F2331 /* Pods_DependencyInjection.framework */,
 				4694B6D811EBD1976D9DD2AC /* Pods_DependencyInjection_DependencyInjectionTests.framework */,
 			);
@@ -142,6 +247,7 @@
 				23D4D2A824E06B8A00672F22 /* Sources */,
 				23D4D2A924E06B8A00672F22 /* Frameworks */,
 				23D4D2AA24E06B8A00672F22 /* Resources */,
+				23B302FF24E0CB0300483553 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +290,7 @@
 				TargetAttributes = {
 					23D4D2AB24E06B8A00672F22 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					23D4D2B424E06B8A00672F22 = {
 						CreatedOnToolsVersion = 11.5;
@@ -295,6 +402,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235E636C24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift in Sources */,
+				235E637924E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift in Sources */,
+				235E636F24E0D5E000AE7ECC /* ResolverExtension.swift in Sources */,
+				235E637524E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift in Sources */,
+				235E637224E0D74600AE7ECC /* CoordinatorAssembly.swift in Sources */,
+				235E637724E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift in Sources */,
+				235E636924E0D54800AE7ECC /* CoordinatorFactoryAssembly.swift in Sources */,
+				23B3032624E0CF3100483553 /* DependencyInjector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C14B2E9F623002DE98F5AA5F /* Pods-DependencyInjection.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -459,6 +575,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -468,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C0D0EFC49ABD18698EC5383 /* Pods-DependencyInjection.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -495,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A8BAB30D7BE377E64082D12 /* Pods-DependencyInjection-DependencyInjectionTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = DependencyInjectionTests/Info.plist;
@@ -514,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72F67EC0A3AF3A46E89F4810 /* Pods-DependencyInjection-DependencyInjectionTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = DependencyInjectionTests/Info.plist;

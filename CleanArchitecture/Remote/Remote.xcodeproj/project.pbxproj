@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23B302F124E0CAE400483553 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302F024E0CAE400483553 /* Domain.framework */; };
+		23B302F224E0CAE400483553 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302F024E0CAE400483553 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B302FA24E0CAF700483553 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302F924E0CAF700483553 /* Infra.framework */; };
+		23B302FB24E0CAF700483553 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302F924E0CAF700483553 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23D4D34624E06D9C00672F22 /* Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D4D33C24E06D9C00672F22 /* Remote.framework */; };
 		23D4D34B24E06D9C00672F22 /* RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D34A24E06D9C00672F22 /* RemoteTests.swift */; };
 		23D4D34D24E06D9C00672F22 /* Remote.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D4D33F24E06D9C00672F22 /* Remote.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +26,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23B302F324E0CAE400483553 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23B302F224E0CAE400483553 /* Domain.framework in Embed Frameworks */,
+				23B302FB24E0CAF700483553 /* Infra.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		23B302F024E0CAE400483553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B302F924E0CAF700483553 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D4D33C24E06D9C00672F22 /* Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D4D33F24E06D9C00672F22 /* Remote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remote.h; sourceTree = "<group>"; };
 		23D4D34024E06D9C00672F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B302F124E0CAE400483553 /* Domain.framework in Frameworks */,
+				23B302FA24E0CAF700483553 /* Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B302EF24E0CAE400483553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B302F924E0CAF700483553 /* Infra.framework */,
+				23B302F024E0CAE400483553 /* Domain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23D4D33224E06D9C00672F22 = {
 			isa = PBXGroup;
 			children = (
 				23D4D33E24E06D9C00672F22 /* Remote */,
 				23D4D34924E06D9C00672F22 /* RemoteTests */,
 				23D4D33D24E06D9C00672F22 /* Products */,
+				23B302EF24E0CAE400483553 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +141,7 @@
 				23D4D33824E06D9C00672F22 /* Sources */,
 				23D4D33924E06D9C00672F22 /* Frameworks */,
 				23D4D33A24E06D9C00672F22 /* Resources */,
+				23B302F324E0CAE400483553 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

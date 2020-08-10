@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235E636524E0D3E600AE7ECC /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E636424E0D3E600AE7ECC /* CoordinatorFactory.swift */; };
+		235E636724E0D41B00AE7ECC /* AuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E636624E0D41B00AE7ECC /* AuthenticationFactory.swift */; };
+		23B302E724E0CAD100483553 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302E624E0CAD100483553 /* Domain.framework */; };
+		23B302E824E0CAD100483553 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302E624E0CAD100483553 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23B3031424E0CBA600483553 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031324E0CBA600483553 /* LoginViewController.swift */; };
+		23B3031624E0CBB300483553 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031524E0CBB300483553 /* LoginPresenter.swift */; };
+		23B3031824E0CBBD00483553 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031724E0CBBD00483553 /* LoginView.swift */; };
+		23B3031C24E0CBE100483553 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031B24E0CBE100483553 /* Coordinator.swift */; };
+		23B3031E24E0CBEA00483553 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031D24E0CBEA00483553 /* AppCoordinator.swift */; };
+		23B3032024E0CBF600483553 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3031F24E0CBF600483553 /* AuthenticationCoordinator.swift */; };
+		23B3032424E0CD4900483553 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3032324E0CD4900483553 /* ViewLoadable.swift */; };
 		23D4D2DA24E06D5200672F22 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D4D2D024E06D5200672F22 /* Presentation.framework */; };
 		23D4D2DF24E06D5200672F22 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D2DE24E06D5200672F22 /* PresentationTests.swift */; };
 		23D4D2E124E06D5200672F22 /* Presentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D4D2D324E06D5200672F22 /* Presentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +33,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		23B302E924E0CAD100483553 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23B302E824E0CAD100483553 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		235E636424E0D3E600AE7ECC /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		235E636624E0D41B00AE7ECC /* AuthenticationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFactory.swift; sourceTree = "<group>"; };
+		23B302E624E0CAD100483553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B3031324E0CBA600483553 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23B3031524E0CBB300483553 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		23B3031724E0CBBD00483553 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		23B3031B24E0CBE100483553 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		23B3031D24E0CBEA00483553 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		23B3031F24E0CBF600483553 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		23B3032324E0CD4900483553 /* ViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
 		23D4D2D024E06D5200672F22 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D4D2D324E06D5200672F22 /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
 		23D4D2D424E06D5200672F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B302E724E0CAD100483553 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +86,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B302E524E0CAD100483553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B302E624E0CAD100483553 /* Domain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23B3031124E0CB6A00483553 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				23B3031324E0CBA600483553 /* LoginViewController.swift */,
+				23B3031524E0CBB300483553 /* LoginPresenter.swift */,
+				23B3031724E0CBBD00483553 /* LoginView.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		23B3031224E0CB7B00483553 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				23B3032124E0CC5000483553 /* Factories */,
+				23B3031B24E0CBE100483553 /* Coordinator.swift */,
+				23B3031D24E0CBEA00483553 /* AppCoordinator.swift */,
+				23B3031F24E0CBF600483553 /* AuthenticationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		23B3032124E0CC5000483553 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				235E636424E0D3E600AE7ECC /* CoordinatorFactory.swift */,
+				235E636624E0D41B00AE7ECC /* AuthenticationFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		23B3032224E0CD3100483553 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				23B3032324E0CD4900483553 /* ViewLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		23D4D2C624E06D5200672F22 = {
 			isa = PBXGroup;
 			children = (
 				23D4D2D224E06D5200672F22 /* Presentation */,
 				23D4D2DD24E06D5200672F22 /* PresentationTests */,
 				23D4D2D124E06D5200672F22 /* Products */,
+				23B302E524E0CAD100483553 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +156,9 @@
 			children = (
 				23D4D2D324E06D5200672F22 /* Presentation.h */,
 				23D4D2D424E06D5200672F22 /* Info.plist */,
+				23B3032224E0CD3100483553 /* Protocols */,
+				23B3031224E0CB7B00483553 /* Coordinators */,
+				23B3031124E0CB6A00483553 /* LoginScene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -108,6 +194,7 @@
 				23D4D2CC24E06D5200672F22 /* Sources */,
 				23D4D2CD24E06D5200672F22 /* Frameworks */,
 				23D4D2CE24E06D5200672F22 /* Resources */,
+				23B302E924E0CAD100483553 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +235,7 @@
 				TargetAttributes = {
 					23D4D2CF24E06D5200672F22 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					23D4D2D824E06D5200672F22 = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B3032024E0CBF600483553 /* AuthenticationCoordinator.swift in Sources */,
+				23B3031C24E0CBE100483553 /* Coordinator.swift in Sources */,
+				23B3031824E0CBBD00483553 /* LoginView.swift in Sources */,
+				23B3031E24E0CBEA00483553 /* AppCoordinator.swift in Sources */,
+				23B3031624E0CBB300483553 /* LoginPresenter.swift in Sources */,
+				23B3032424E0CD4900483553 /* ViewLoadable.swift in Sources */,
+				23B3031424E0CBA600483553 /* LoginViewController.swift in Sources */,
+				235E636524E0D3E600AE7ECC /* CoordinatorFactory.swift in Sources */,
+				235E636724E0D41B00AE7ECC /* AuthenticationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +437,7 @@
 		23D4D2E524E06D5200672F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -358,6 +456,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -366,6 +465,7 @@
 		23D4D2E624E06D5200672F22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -392,6 +492,7 @@
 		23D4D2E824E06D5200672F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = PresentationTests/Info.plist;
@@ -410,6 +511,7 @@
 		23D4D2E924E06D5200672F22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = PresentationTests/Info.plist;
