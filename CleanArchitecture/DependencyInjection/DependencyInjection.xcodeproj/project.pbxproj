@@ -15,6 +15,7 @@
 		235E637524E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637424E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift */; };
 		235E637724E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637624E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift */; };
 		235E637924E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E637824E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift */; };
+		237DFAA224E22ECF0003123B /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFAA124E22ECF0003123B /* DomainAssembly.swift */; };
 		23B302FD24E0CB0300483553 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302FC24E0CB0300483553 /* Infra.framework */; };
 		23B302FE24E0CB0300483553 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B302FC24E0CB0300483553 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23B3030124E0CB0E00483553 /* Local.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3030024E0CB0E00483553 /* Local.framework */; };
@@ -72,6 +73,7 @@
 		235E637424E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFactoryImplementation.swift; sourceTree = "<group>"; };
 		235E637624E0D8A600AE7ECC /* AuthenticationFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowAssembly.swift; sourceTree = "<group>"; };
 		235E637824E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactoryAssembly.swift; sourceTree = "<group>"; };
+		237DFAA124E22ECF0003123B /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
 		23B302FC24E0CB0300483553 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B3030024E0CB0E00483553 /* Local.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Local.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B3030324E0CB1900483553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		237DFAA024E22EB50003123B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				237DFAA124E22ECF0003123B /* DomainAssembly.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		23D4D2A224E06B8A00672F22 = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				23B3032524E0CF3100483553 /* DependencyInjector.swift */,
+				237DFAA024E22EB50003123B /* Core */,
 				235E637024E0D69400AE7ECC /* Features */,
 				235E636A24E0D56100AE7ECC /* CoordinatorAssembly */,
 				235E636D24E0D5CE00AE7ECC /* Extensions */,
@@ -403,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				235E636C24E0D59400AE7ECC /* CoordinatorFactoryImplementation.swift in Sources */,
+				237DFAA224E22ECF0003123B /* DomainAssembly.swift in Sources */,
 				235E637924E0DD1200AE7ECC /* ViewControllersFactoryAssembly.swift in Sources */,
 				235E636F24E0D5E000AE7ECC /* ResolverExtension.swift in Sources */,
 				235E637524E0D88A00AE7ECC /* AuthenticationFactoryImplementation.swift in Sources */,

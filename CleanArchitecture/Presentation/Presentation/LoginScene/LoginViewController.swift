@@ -68,4 +68,12 @@ extension LoginViewController: LoginViewable {
         present(alert, animated: true, completion: nil)
     }
 
+    public func showEmailError(_ message: String) {
+        debugPrint(#function)
+    }
+
+    public func showPasswordError(_ message: String) {
+        debugPrint(#function)
+    }
+
 }

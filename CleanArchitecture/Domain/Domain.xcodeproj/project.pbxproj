@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		237DFA8C24E22CE10003123B /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA8B24E22CE10003123B /* LoginForm.swift */; };
+		237DFA9024E22CF30003123B /* LoginFormValidateUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA8D24E22CF30003123B /* LoginFormValidateUseCaseProtocol.swift */; };
+		237DFA9124E22CF30003123B /* LoginFormValidateUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA8E24E22CF30003123B /* LoginFormValidateUseCase.swift */; };
+		237DFA9224E22CF30003123B /* LoginFormValidateUseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA8F24E22CF30003123B /* LoginFormValidateUseCaseError.swift */; };
+		237DFA9824E22CFF0003123B /* ContainerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA9324E22CFF0003123B /* ContainerValidator.swift */; };
+		237DFA9924E22CFF0003123B /* ResultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA9424E22CFF0003123B /* ResultExtensions.swift */; };
+		237DFA9A24E22CFF0003123B /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA9524E22CFF0003123B /* PasswordValidator.swift */; };
+		237DFA9B24E22CFF0003123B /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA9624E22CFF0003123B /* EmailValidator.swift */; };
+		237DFA9C24E22CFF0003123B /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237DFA9724E22CFF0003123B /* Validatable.swift */; };
 		23D4D2FE24E06D7900672F22 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D4D2F424E06D7900672F22 /* Domain.framework */; };
 		23D4D30324E06D7900672F22 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D4D30224E06D7900672F22 /* DomainTests.swift */; };
 		23D4D30524E06D7900672F22 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D4D2F724E06D7900672F22 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		237DFA8B24E22CE10003123B /* LoginForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		237DFA8D24E22CF30003123B /* LoginFormValidateUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormValidateUseCaseProtocol.swift; sourceTree = "<group>"; };
+		237DFA8E24E22CF30003123B /* LoginFormValidateUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormValidateUseCase.swift; sourceTree = "<group>"; };
+		237DFA8F24E22CF30003123B /* LoginFormValidateUseCaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormValidateUseCaseError.swift; sourceTree = "<group>"; };
+		237DFA9324E22CFF0003123B /* ContainerValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerValidator.swift; sourceTree = "<group>"; };
+		237DFA9424E22CFF0003123B /* ResultExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultExtensions.swift; sourceTree = "<group>"; };
+		237DFA9524E22CFF0003123B /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		237DFA9624E22CFF0003123B /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		237DFA9724E22CFF0003123B /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		23D4D2F424E06D7900672F22 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D4D2F724E06D7900672F22 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		23D4D2F824E06D7900672F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +68,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		237DFA9D24E22D0B0003123B /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				237DFA9724E22CFF0003123B /* Validatable.swift */,
+				237DFA9324E22CFF0003123B /* ContainerValidator.swift */,
+				237DFA9624E22CFF0003123B /* EmailValidator.swift */,
+				237DFA9524E22CFF0003123B /* PasswordValidator.swift */,
+				237DFA9424E22CFF0003123B /* ResultExtensions.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		237DFA9E24E22D140003123B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				237DFA8E24E22CF30003123B /* LoginFormValidateUseCase.swift */,
+				237DFA8F24E22CF30003123B /* LoginFormValidateUseCaseError.swift */,
+				237DFA8D24E22CF30003123B /* LoginFormValidateUseCaseProtocol.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		237DFA9F24E22D1F0003123B /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				237DFA8B24E22CE10003123B /* LoginForm.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
 		23D4D2EA24E06D7900672F22 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +119,9 @@
 		23D4D2F624E06D7900672F22 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				237DFA9F24E22D1F0003123B /* Forms */,
+				237DFA9E24E22D140003123B /* UseCases */,
+				237DFA9D24E22D0B0003123B /* Validators */,
 				23D4D2F724E06D7900672F22 /* Domain.h */,
 				23D4D2F824E06D7900672F22 /* Info.plist */,
 			);
@@ -148,6 +199,7 @@
 				TargetAttributes = {
 					23D4D2F324E06D7900672F22 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					23D4D2FC24E06D7900672F22 = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237DFA9A24E22CFF0003123B /* PasswordValidator.swift in Sources */,
+				237DFA9C24E22CFF0003123B /* Validatable.swift in Sources */,
+				237DFA9224E22CF30003123B /* LoginFormValidateUseCaseError.swift in Sources */,
+				237DFA8C24E22CE10003123B /* LoginForm.swift in Sources */,
+				237DFA9024E22CF30003123B /* LoginFormValidateUseCaseProtocol.swift in Sources */,
+				237DFA9824E22CFF0003123B /* ContainerValidator.swift in Sources */,
+				237DFA9B24E22CFF0003123B /* EmailValidator.swift in Sources */,
+				237DFA9924E22CFF0003123B /* ResultExtensions.swift in Sources */,
+				237DFA9124E22CF30003123B /* LoginFormValidateUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +401,7 @@
 		23D4D30924E06D7900672F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -358,6 +420,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -366,6 +429,7 @@
 		23D4D30A24E06D7900672F22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
@@ -392,6 +456,7 @@
 		23D4D30C24E06D7900672F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -410,6 +475,7 @@
 		23D4D30D24E06D7900672F22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F3YGZDHFX;
 				INFOPLIST_FILE = DomainTests/Info.plist;
